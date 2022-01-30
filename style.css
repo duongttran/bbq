@@ -1,0 +1,190 @@
+:root {
+    --orangebbq: #f18119;
+    --blackbbq: #404040;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro';
+    font-size: 1rem;
+    font-weight: 100;
+    color: var(--blackbbq)
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: 100;
+    /* padding: 2rem 1rem; */
+    text-shadow: 2px 2px 5px rgb(255, 143, 14);
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 27px;
+    color: #404040;
+    margin: 0;
+}
+
+.emphasis {
+    font-weight: 900;
+    display: block;
+}
+
+.small,
+.fine-print {
+    font-size: 0.625rem;
+    line-height: 13px;
+}
+
+.fine-print {
+    /* width: 150px; */
+    margin: 13px auto;
+}
+
+.intro {
+    background-image: url(https://www.charbroil.com/media/ctm//a/p/apple_butter_bbq_ribs.jpg.jpeg);
+    background-color: rgba(26, 26, 26, 0.3);
+    background-size: cover;
+    background-position: center;
+    /* padding: 0 .25em 2em; */
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 60vh;
+    text-align: center;
+    color: white;
+}
+
+.intro p:nth-child(2) {
+    color: rgb(255, 174, 0);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.top-text {
+    font-size: 10px;
+    margin: 0 auto;
+    padding-top: 5px;
+    color: var(--orangebbq);
+    font-weight: 900;
+    text-transform: uppercase;
+    order: -1;
+    letter-spacing: 2px;
+    border-top: 5px solid #F18119;
+    border-image: linear-gradient(to right, #ff4800, #ffc31d) 1;
+    background: -webkit-linear-gradient(0deg, #ff4800, #ffc31d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+}
+
+.main-content p:nth-child(2) {
+    color: var(--orangebbq);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 24px
+}
+
+.main-content p:nth-child(3) {
+    line-height: 24px;
+}
+
+input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: block;
+    /* max-width: 500px; */
+    min-width: 300px;
+    margin: 20px auto;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+input::placeholder {
+    font-family: 'Source Sans Pro';
+    font-weight: 100;
+    color: rgb(180, 180, 180);
+}
+
+input:hover,
+input:focus {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+button {
+    border: 0;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, #FF713B, #FFA51D);
+    background-color: orange;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    border-image: linear-gradient(right, orange, yellow);
+    /* background-color: yellow; */
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    body {
+        font-size: 1.125rem;
+    }
+    small {
+        font-size: 0.625rem;
+    }
+    .layout {
+        display: flex;
+    }
+    .intro {
+        background-image: url(https://urbainecity.com/wp-content/uploads/2019/06/BBQ-1.jpg);
+        height: 100vh;
+        justify-content: space-between;
+        min-width: 50%;
+    }
+    .main-content {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-self: center;
+        align-items: center;
+    }
+    .main-content p:nth-child(3) {
+        line-height: 28px;
+    }
+}
